@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.tmp
+*.mp4
+*.mov
+*.mkv
