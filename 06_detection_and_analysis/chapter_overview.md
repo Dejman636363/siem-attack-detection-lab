@@ -1,4 +1,4 @@
-## 6. Threat Detection and Artifact Analysis Based on the Attack Scenario
+## Threat Detection and Artifact Analysis Based on the Attack Scenario
 
 In the previous chapter, a detailed course of the simulated attack in the test environment was presented.  
 The next crucial step is to **verify whether the malicious activity left visible traces in the logs** and to **assess how effectively they can be detected** using the monitoring and detection systems deployed in the laboratory.
