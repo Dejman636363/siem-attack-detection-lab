@@ -105,15 +105,16 @@ Possible future enhancements:
 ---
 
 ## 📂 Repository Structure
-
+```
 siem-attack-detection-lab
-├── 03_lab_environment/         → dokumentacja konfiguracji środowiska labowego
-├── 05_attack_scenario/          → implementacja i przebieg scenariusza ataku
-├── 06_detection_and_analysis/   → analiza logów i proces detekcji zagrożeń
-├── 07_final_analysis/            → analiza końcowa, wnioski, ocena narzędzi
-├── 8.3_future_work.md             → kierunki dalszego rozwoju środowiska
-├── docs/                          → folder z pracą inżynierską (PDF)
-├── README.md                      → główny opis projektu
+├── 03_lab_environment/ → documentation of the lab environment configuration
+├── 05_attack_scenario/ → implementation and execution of the attack scenario
+├── 06_detection_and_analysis/ → log analysis and threat detection process
+├── 07_final_analysis/ → final analysis, conclusions, evaluation of tools
+├── 8.3_future_work.md → directions for further development of the environment
+├── docs/ → folder with the engineering thesis (PDF)
+├── README.md → main project description
+```
 
 Each chapter folder contains:
 - one `chapter_overview.md` (introduction to the chapter),
