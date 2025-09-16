@@ -43,8 +43,6 @@ The environment replicates a corporate network and consists of:
 
 Below is the network topology of the SOC detection lab used in this project:
 
-[🔍 **View full-size diagram**](./docs/lab_topology.jpg)
-
 ![Lab Topology](./docs/lab_topology.jpg)
 
 ---
