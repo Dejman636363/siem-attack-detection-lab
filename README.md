@@ -103,7 +103,7 @@ Possible future enhancements:
 - Integration of TheHive + Cortex (SOAR)  
 - Connecting MISP for automated IoC ingestion  
 - Exposing a Cowrie honeypot to the Internet  
-- Adding vulnerable hosts for penetration testing  
+- Adding vulnerable hosts for exploits testing  
 - Introducing a DMZ network zone  
 - Running Suricata in inline IPS mode to block malicious traffic
 - Creating and testing custom Sigma rules  
