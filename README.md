@@ -28,10 +28,10 @@ The environment replicates a corporate network and consists of:
 - **Kali Linux** — attacking machine  
 - **Windows Server 2019** — AD domain controller, DNS, IIS  
 - **Windows 10** — domain client (victim machine)  
-- **Ubuntu (Wazuh)** — HIDS host collecting logs from agents  
-- **Ubuntu (Elastic Stack)** — main SIEM detection host containing:
+- **Ubuntu (Wazuh)** — HIDS host collecting logs from Wazuh agents  
+- **Ubuntu (Elastic Stack)** — main SIEM detection host centralizing logs from multiple sources, containing:
   - **Fleet Server with Elastic Agent**
-  - **Filebeat, Winlogbeat and other Beats**
+  - **Filebeat, Winlogbeat**
   - **Kibana and Elasticsearch**
   - integrated **Suricata** and **Zeek** for network traffic analysis
 
@@ -54,7 +54,7 @@ Below is the network topology of the SOC detection lab used in this project:
 3. **Remote login to the machine** – xfreerdp (RDP)
 4. **Download and execute Apollo payload** – generated in Mythic C2
 5. **Persistence** – scheduled task (SYSTEM) and registry entry (user)
-6. **Post-exploitation reconnaissance and data exfiltration** – Apollo functions (screenshot, keylogger, download)
+6. **Post-exploitation reconnaissance and data exfiltration** – Apollo functions (whoami, screenshot, keylogger, download)
 7. **Test of persistence mechanisms** – logging in as another user
 
 ---
@@ -69,7 +69,7 @@ The following tools and methods were used to detect and investigate the attack:
 - **File Integrity Monitoring (FIM)** — tracking file and registry changes  
 - **Sandbox and reputation** — analyzing the file in VirusTotal
 
-Identified artifacts included: **attacker IP address, file hashes, paths, registry changes, encoded PowerShell commands, process trees, network anomalies**, and **techniques mapped to MITRE ATT&CK**.
+Identified artifacts included: **attacker IP address, file hash, paths, registry changes, scheduled task, encoded PowerShell commands, process trees, network anomalies**, and **techniques mapped to MITRE ATT&CK**.
 
 ---
 
@@ -105,10 +105,18 @@ Possible future enhancements:
 - Exposing a Cowrie honeypot to the Internet  
 - Adding vulnerable hosts for penetration testing  
 - Introducing a DMZ network zone  
-- Enabling IPS mode in Suricata  
+- Running Suricata in inline IPS mode to block malicious traffic
 - Creating and testing custom Sigma rules  
 - RAM analysis using Volatility  
 - Adding more offensive tools and APT-style scenarios
+- Testing and tuning firewalls  
+- Using Wazuh for advanced detection  
+- Deploying DFIR tools (e.g. Velociraptor)  
+- Simulating attacks on AD, IIS and other infrastructure services  
+- Implementing additional MITRE ATT&CK techniques
+- Adding unpatched vulnerable systems to test exploits
+- Adding Linux-based victim machines
+
 
 ---
 
