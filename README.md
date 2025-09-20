@@ -28,7 +28,7 @@ The environment replicates a corporate network and consists of:
 - **Kali Linux** — attacking machine  
 - **Windows Server 2019** — AD domain controller, DNS, IIS  
 - **Windows 10** — domain client (victim machine)  
-- **Ubuntu (Wazuh)** — HIDS host collecting logs from Wazuh agents  
+- **Ubuntu (Wazuh)** — HIDS host collecting logs from Wazuh agent  
 - **Ubuntu (Elastic Stack)** — main SIEM detection host centralizing logs from multiple sources, containing:
   - **Fleet Server with Elastic Agent**
   - **Filebeat, Winlogbeat**
