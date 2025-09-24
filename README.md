@@ -116,6 +116,7 @@ Possible future enhancements:
 - Implementing additional MITRE ATT&CK techniques
 - Adding unpatched vulnerable systems to test exploits
 - Adding Linux-based victim machines
+- Integrate and test BloodHound in the lab for Active Directory enumeration and attack-path analysis
 
 
 ---
